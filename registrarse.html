@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+    <style>
+        body{
+            justify-content: flex-start;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 30vw;
+            gap: 20px;
+            border-width: 2px;
+            border-style: solid;
+            border-image: none;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+    </style>
+<body>
+    <main>
+        <h1>Registrate</h1>
+            <h2> y disfruta de nuestros productos!</h2>
+
+        <form action="procesar_registro.php" method="POST">
+            <label for="username">Nombre de usuario:</label>
+            <input  id="username" name="username" required placeholder="ingresa un nombre de usuario">
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required placeholder="Ingresa una contraseña">
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required placeholder="Ingresa una direccion de correo electrónico">
+
+            <label for="direcion">Ingresa tu dirección:</label>
+            <input type="direction" id="direction" name="direction" required placeholder="ingresa tu dirección de domicilio">
+
+            <input type="submit" value="Registrarse">
+        </form>
+</body>
+</html>
