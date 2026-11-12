@@ -10,60 +10,111 @@ main{
 }
 header{
     position: fixed;
-    top: 0;
+    top: 12px;
     left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0px 2%;
     display: flex;
-    width: 90%;
     align-items: center;
-    gap: 150px;
-    padding: 0px 20px;
     background-color: #1b120d;
     border-bottom: 1px solid #3a2418;
+}
+header a{
+    margin-right: 25px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #583722;
+    text-decoration: none;
+}
+header::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background-color: #1b120d;
+}
+div{
+    align-items: center;
 }
 h1{
     font-family: 'Quicksand', serif;
     color: #c9862a;
 }
-header h1{
-    font-size: 2rem;
-    margin: 0;
-}
 ul{
     display: flex;
     gap: 33px;
+    justify-content: center;
+    align-items: center;
     list-style: none;
 }
 a{
-    color: white;
     text-decoration: none;
     display: inline-block;
-    padding: 10px 15px;
     border-radius: 5px;
 }
 a:hover{
-    color: #d18b2d;
+    color: #c2802b;
 }
-button{
-    background: transparent;
+.button{
+    background: #3a2418;
     color: white;
-    padding: 12px 25px;
-    cursor: pointer;
-    height: 40px;
-    width: 20px;
-    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    font-family: 'Quicksand', sans-serif;
+}
+.button:hover{
+    background-color: #c08c47;
+    color: white;
+}
+.button,
+.login-button{
+    background: #3a2418;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;    
+    font-family: 'Quicksand', sans-serif;
 }
 p{
     width: 50%;
     color:aliceblue;
     padding: 0px;
 }
-.logo img{
-    font-size: 30px;
-    width: 100px;
-}
-
 img{
-    background-size: contain; /*contain, 100% 100%*/
-    background-repeat: no-repeat;
-    background-position: url(../images/imagen1.jpe);
+    width: 100%;
+    height: auto;
+}
+.logo{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    transform: translateY(-10px) translateX(-10px);
+}
+.logo img {
+    width: 200px;
+    height: auto;
+}
+.banner {
+    float: right;
+    width: 55%;
+    height: 80vh;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
